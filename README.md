@@ -28,7 +28,7 @@ rest API endpoints. The routes proxy requests to "resolvers" on the Fauna side, 
    This will open a web page asking you to login to Cloudflare. 
    After you complete the login process, there should be an API Token in your session for wrangler
 
-3. Edit `wrangler.toml`:
+3. Edit [`wrangler.toml`](wrangler.toml):
    * Provide a value for your `account_id`.
    * Set the `FAUNADB_DOMAIN` environment variable to one of the following values depending on which
     [Region Group](https://docs.fauna.com/fauna/current/api/fql/region_groups#how-to-use-region-groups)  
@@ -95,7 +95,7 @@ Be sure to have already:
 3. Deployed the API to your custom domain in the previous step.
 
 ### Deploy the SPA
-1. Start a new project directory and run this Wranger command:
+1. Start a new project directory and run this Wranger command inside it:
    ```
    wrangler init --site vue-app-edge-gateway
    ```
@@ -122,4 +122,4 @@ Be sure to have already:
    ```
    wrangler publish
    ```
-> The SPA should  now be at the "`/`" path of your custom domain. And the APIs at `/users`.
+   The SPA should  now be at the "`/`" path of your custom domain. And the APIs at `/users`.
