@@ -7,15 +7,11 @@ This repository contains unofficial patterns, sample code, or tools to help deve
 ---
 
 # Edge Gateway (Cloudflare)
+This sample "Edge API Gateway" using Cloudflare Workers + Fauna is a companion to
+[this](https://github.com/fauna-labs/vue-fauna-edge-api) sample Auth0 + Cloudflare Workers + Fauna project.
 
-> Generated from template 
-> [https://github.com/cloudflare/worker-template-router](https://github.com/cloudflare/worker-template-router)
-
----
-
-This is a sample "Edge API Gateway" using Cloudflare Workers to provide routing for `GET`, `PUT` and `POST` `/users`
-rest API endpoints. The routes proxy requests to "resolvers" on the Fauna side, which are discussed in
-[this project](https://github.com/fauna-labs/vue-fauna-edge-api).
+> If you're looking for a generic Fauna template for Cloudflare Workers for building a fast, globally distributed
+> API, head over to [this](https://github.com/fauna-labs/fauna-workers) project.
 
 ## Setup
 
@@ -48,8 +44,8 @@ rest API endpoints. The routes proxy requests to "resolvers" on the Fauna side, 
 ## Next Steps
 
 At this point, `GET`, `PUT` and `POST` `/users` should be live but you still need to deploy the resolvers 
-(Fauna User Defined Functions, UDFs) on Fauna. Hop over to 
-[this project](https://github.com/fauna-labs/vue-fauna-edge-api#1-create-fauna-resources)
+(Fauna User Defined Functions, UDFs) on Fauna. Hop back over to the
+[main project](https://github.com/fauna-labs/vue-fauna-edge-api#1-create-fauna-resources)
 and complete the steps **1. Create Fauna Resources** and **2. Setup External Authentication with Auth0**
 to finish the setup.
 
